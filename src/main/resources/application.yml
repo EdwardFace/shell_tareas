@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: tareas # Name of your application
+  shell:
+    enabled: true
+    # Enable script execution
+    completer:
+      enabled: true         # Enable auto-completion
+logging:
+  level:
+    root: INFO              # Set logging level
+    org.springframework.shell: DEBUG # Debug logs for Spring Shell
