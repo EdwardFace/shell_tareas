@@ -19,10 +19,8 @@ public class TareasApplication {
 	}
     private static void crearArchivo() throws IOException {
         File json = new File(Constantes.NOMBRE_ARCHIVO);
-        if (!json.exists()){
+        if (json.createNewFile()){
             String listaInicial = "{ \n \"listaTareas\": [] \n}";
-            json.createNewFile();
-
             FileWriter fw = new FileWriter(json);
             fw.write(listaInicial);
             fw.close();
